@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: my-db-diary
+    environment:
+      POSTGRES_DB: "diary"
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "admin"
+    ports:
+      - "8090:5432"
+    volumes:
+      - diary-app:/var/lib/postgresql/data
+#      - .:/docker-entrypoint-initdb.d
+volumes:
+  diary-app:
