@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.client.controller.FieldViewController"
+      prefHeight="200.0" prefWidth="600.0">
+
+    <TextField fx:id="dateField" promptText="Дата:" editable="false"></TextField>
+    <TextField fx:id="projectField" promptText="Проект:"></TextField>
+    <TextField fx:id="descriptionField" promptText="Описание:"></TextField>
+    <TextField fx:id="hoursField" promptText="Часы:"></TextField>
+    <HBox>
+        <Button fx:id="addButton" text="Добавить запись" onAction="#addEntry"></Button>
+        <Button fx:id="deleteButton" text="Удалить запись" onAction="#deleteEntry"></Button>
+    </HBox>
+
+
+    <TableView fx:id="tableView">
+
+    </TableView>
+</VBox>
