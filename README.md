@@ -1,0 +1,2 @@
+# ClientServerAppDiary
+Ежедневник
