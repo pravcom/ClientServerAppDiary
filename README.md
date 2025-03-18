@@ -6,10 +6,10 @@
   - Сервер
   - БД -> PostgreSQL
 ### Используемые инструменты:
-  JavaFX
-  PostgreSql
-  Java Socket
-  Flyway
+  - JavaFX
+  - PostgreSql
+  - Java Socket
+  - Flyway
 ### Клиент
   Реализован в модуле client. Состоит из двух View. 
     - Client-view представляет собой календарь. 
